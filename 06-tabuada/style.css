@@ -133,6 +133,11 @@ tbody tr {
   border-bottom: 1px solid #1f2937;
 }
 
+tbody td.negativo{
+  background-color: red;
+
+}
+
 tbody td {
   padding: 12px;
   font-size: 1rem;

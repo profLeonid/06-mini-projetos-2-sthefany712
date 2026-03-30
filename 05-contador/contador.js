@@ -6,14 +6,14 @@ import {criarListaImpares,
     criarListaPotencia2
 } from "./listasNumericas.js";
 
-const gerarNumeros = document.getElementById('gerarNumeros')
+const gerarNumeros = document.getElementById('gerarNumeros') //botão
 
 function criarLinha (numero, par, impar, multi5, potencia2) {
     const tabela = document.getElementById('tabela')
     
     const tr = document.createElement('tr')
 
-    const tdNumeros = document.createElement('td') //onde fica as informações
+    const tdNumeros = document.createElement('td') //onde fica as informações (dentro da linha(tr))
     tdNumeros.textContent = numero
 
     const tdPares = document.createElement('td')
@@ -35,7 +35,6 @@ function criarLinha (numero, par, impar, multi5, potencia2) {
 
 function preencherTabela(){
     const quantidade = Number(document.getElementById('quantidade').value)
-    
     
     const listaNumeros = criarListaNumeros(quantidade)
     const listaPares = criarListaPares(quantidade)

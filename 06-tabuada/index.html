@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tabuada Estendida</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="./tabuada.js" defer type="module"></script> 
+  
+  <!--O defer é um atributo HTML usado na tag <script> para adiar a execução de um arquivo JavaScript externo até que o documento HTML seja totalmente analisado, sem bloquear a renderização da página. Ele permite o download do script em paralelo (assíncrono) e garante a execução na ordem em que aparecem.
+
+    Enquanto o defer aguarda o final da renderização para executar, o async executa o script assim que o download termina, podendo interromper a análise do HTML. O defer é o mais indicado quando a ordem de execução importa e a interação com o DOM é necessária.-->
+
 </head>
 <body>
 
@@ -17,10 +23,10 @@
 
     <div class="campo">
       <label>Número</label>
-      <input type="number" placeholder="Ex: 7"/>
+      <input id="quantidade" type="number" placeholder="Ex: 7"/>
     </div>
 
-    <button>Gerar Tabuada</button>
+    <button id="gerarTabuada" >Gerar Tabuada</button>
 
     <div class="resultado">
       <p class="resultado-titulo">Resultado</p>
@@ -35,7 +41,7 @@
               <th>Divisão</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tabela" >
             <tr>
               <td>1</td>
               <td>8</td>
